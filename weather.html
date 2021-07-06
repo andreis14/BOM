@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="scripts/weather.js" defer></script>
+  </head>
+
+  <body>
+    <p id="city">Current weater in</p>
+    <img src="" id="img" alt="" data-weather-icon />
+    <p>Min. <span id="tempmin"></span> / Max. <span id="tempmax"></span> C</p>
+
+    <p>
+      Current temperature
+      <strong id="temp"></strong>&deg; , feels like
+      <strong id="feels__like"></strong>
+    </p>
+    <div data-temperature-toggle>
+      <p>
+        <label>
+          Celcius
+          <input type="radio" name="temp" value="Celsius" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Fahrenheit
+          <input type="radio" name="temp" value="Fahrenheit" />
+        </label>
+      </p>
+    </div>
+  </body>
+</html>
